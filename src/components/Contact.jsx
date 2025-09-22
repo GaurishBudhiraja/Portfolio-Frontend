@@ -21,7 +21,7 @@ const Contact = () => {
 
     try {
       const response = await fetch(
-        'https://portfolio-backend-production-3344.up.railway.app/send', // Railway backend URL
+        'https://portfolio-backend-teim.onrender.com/send', // Railway backend URL
         {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
