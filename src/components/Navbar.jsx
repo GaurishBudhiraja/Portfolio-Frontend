@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { styles } from '../styles';
 import { navLinks } from '../constants';
-import { close, menu, logo, logotext } from '../assets';
+import { close, menu, logo } from '../assets';
 
 const Navbar = () => {
   const [active, setActive] = useState('');
@@ -11,7 +11,8 @@ const Navbar = () => {
   return (
     <nav
       className={`${styles.paddingX} w-full flex items-center py-2 fixed 
-      top-0 z-20 bg-flashWhite sm:opacity-[0.97] xxs:h-[12vh]`}>
+      top-0 z-20 bg-flashWhite sm:opacity-[0.97] xxs:h-[12vh]`}
+    >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link
           to="/"
@@ -19,17 +20,16 @@ const Navbar = () => {
           onClick={() => {
             setActive('');
             window.scrollTo(0, 0);
-          }}>
+          }}
+        >
           <img
-            src={logo} // your logo comes here
+            src={logo}
             alt="logo"
             className="sm:w-[50px] sm:h-[50px] w-[45px] h-[45px] object-contain"
           />
-          <a href="#hero" className="flex items-center gap-2">
-            <span className="text-[24px] sm:text-[28px] font-bold text-black">
-              Gaurish Budhiraja
-            </span>
-          </a>
+          <span className="text-[24px] sm:text-[28px] font-bold text-black">
+            Gaurish Budhiraja
+          </span>
         </Link>
 
         {/* Desktop Links */}
@@ -41,43 +41,41 @@ const Navbar = () => {
                 active === nav.title ? 'text-french' : 'text-eerieBlack'
               } hover:text-taupe text-[21px] font-medium font-mova 
                 uppercase tracking-[3px] cursor-pointer nav-links`}
-              onClick={() => setActive(nav.title)}>
+              onClick={() => setActive(nav.title)}
+            >
               <a href={`#${nav.id}`}>{nav.title}</a>
             </li>
           ))}
         </ul>
 
         {/* Mobile */}
-        <div className="sm:hidden flex flex-1 w-screen justify-end items-center">
+        <div className="sm:hidden flex flex-1 justify-end items-center">
           {toggle ? (
             <div
-              className={`p-6 bg-flashWhite opacity-[0.98] absolute 
-                top-0 left-0 w-screen h-[100vh] z-10 menu ${toggle ? 'menu-open' : 'menu-close'}`}>
-              <div className="flex justify-end">
+              className={`p-4 bg-flashWhite opacity-[0.98] absolute 
+                top-0 left-0 w-60 max-h-screen overflow-y-auto z-10 rounded-lg menu ${toggle ? 'menu-open' : 'menu-close'}`}
+            >
+              <div className="flex justify-end mb-4">
                 <img
                   src={close}
                   alt="close"
-                  className="w-[22px] h-[22px] object-contain cursor-pointer"
-                  onClick={() => setToggle(!toggle)}
+                  className="w-6 h-6 object-contain cursor-pointer"
+                  onClick={() => setToggle(false)}
                 />
               </div>
 
-              <ul
-                className="list-none flex flex-col -gap-[1rem] 
-                items-start justify-end mt-[10rem] -ml-[35px]">
+              <ul className="list-none flex flex-col gap-4">
                 {navLinks.map((nav) => (
                   <li
-                    id={nav.id}
                     key={nav.id}
                     className={`${
                       active === nav.title ? 'text-french' : 'text-eerieBlack'
-                    } text-[88px] font-bold font-arenq 
-                      uppercase tracking-[1px] cursor-pointer`}
+                    } text-xl font-bold font-arenq uppercase tracking-[1px] cursor-pointer`}
                     onClick={() => {
                       setToggle(false);
                       setActive(nav.title);
-                      // let anchor navigation happen naturally via href
-                    }}>
+                    }}
+                  >
                     <a href={`#${nav.id}`}>{nav.title}</a>
                   </li>
                 ))}
@@ -87,8 +85,8 @@ const Navbar = () => {
             <img
               src={menu}
               alt="menu"
-              className="w-[34px] h-[34px] object-contain cursor-pointer"
-              onClick={() => setToggle(!toggle)}
+              className="w-8 h-8 object-contain cursor-pointer"
+              onClick={() => setToggle(true)}
             />
           )}
         </div>
