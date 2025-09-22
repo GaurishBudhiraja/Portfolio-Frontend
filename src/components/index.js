@@ -1,3 +1,4 @@
+// src/components/index.js
 import { BallCanvas } from './canvas';
 import Hero from './Hero';
 import Navbar from './Navbar';
@@ -7,4 +8,5 @@ import Experience from './Experience';
 import Projects from './Projects';
 import Contact from './Contact';
 
-export { Hero, Navbar, About, Tech, Experience, Projects, Contact, BallCanvas };
+
+export { Hero, Navbar, About, Tech, Experience, Projects, Contact, BallCanvas};

@@ -35,8 +35,16 @@ export const navLinks = [
     title: 'About',
   },
   {
+    id: 'skills',
+    title: 'Skills',
+  },
+  {
     id: 'projects',
     title: 'Projects',
+  },
+  {
+    id: 'experience',
+    title: 'Experience',
   },
   {
     id: 'contact',
@@ -46,20 +54,24 @@ export const navLinks = [
 
 const services = [
   {
-    title: 'Frontend Developer',
+    title: 'LinkedIn',
     icon: frontend,
+    link: 'https://www.linkedin.com/in/gaurish-budhiraja',
   },
   {
-    title: 'Backend Developer',
+    title: 'Github',
     icon: backend,
+    link: 'https://github.com/GaurishBudhiraja'
   },
   {
-    title: 'UI/UX Design',
+    title: 'Leetcode',
     icon: ux,
+    link: 'https://leetcode.com/u/gaurish_01/',
   },
   {
-    title: 'Software Prototyping',
+    title: 'Resume',
     icon: prototyping,
+    link: 'https://acrobat.adobe.com/id/urn:aaid:sc:AP:a7a3d2f8-1031-4f6f-9232-a7b9a768a88c',
   },
 ];
 
@@ -124,40 +136,33 @@ const technologies = [
 
 const experiences = [
   {
-    title: 'Front-End Developer',
-    company_name: 'Cover Hunt',
+    title: 'Technical Member',
+    company_name: 'OSPC Cybersecurity and Blockchain',
     icon: coverhunt,
     iconBg: '#333333',
-    date: 'Aug 2021 - Feb 2022',
+    date: 'Oct 2024 - Present',
   },
   {
-    title: 'Mentor (Volunteer)',
-    company_name: 'Microverse',
+    title: 'Product Design & Manufacturer',
+    company_name: 'ProdInno Club',
     icon: microverse,
     iconBg: '#333333',
-    date: 'Mar 2022 - May 2022',
+    date: 'Jun 2025 - Present',
   },
   {
-    title: 'Junior Software Engineer',
-    company_name: 'Kelhel',
+    title: 'Technical Team Member',
+    company_name: 'CYSCOM VIT CHENNAI',
     icon: kelhel,
     iconBg: '#333333',
-    date: 'May 2022 - Oct 2022',
-  },
-  {
-    title: 'Full Stack Developer',
-    company_name: 'Diversity Cyber Council',
-    icon: dcc,
-    iconBg: '#333333',
-    date: 'Sep 2022 - Present',
+    date: 'Sept 2025 - Present',
   },
 ];
 
 const projects = [
   {
     id: 'project-1',
-    name: 'KomiKult',
-    description: 'A comic characters list app that displays Marvel characters.',
+    name: 'ISHAL Assistant',
+    description: 'Developed an AI assistant for voice commands, text-to-speech, and system automation with modular command execution using Python & NLP',
     tags: [
       {
         name: 'react',
@@ -173,14 +178,13 @@ const projects = [
       },
     ],
     image: komikult,
-    repo: 'https://github.com/shaqdeff/KomiKult',
-    demo: 'https://shaqdeff.github.io/KomiKult/',
+    repo: 'https://github.com/GaurishBudhiraja',
   },
   {
     id: 'project-2',
-    name: 'Leaderboard',
+    name: 'IDS Model using ML',
     description:
-      'A leaderboard list app that displays scores submitted by different players.',
+      ' Implemented ML-based IDS for anomaly detection in undersea optical fiber networks with optimized threat classification.',
     tags: [
       {
         name: 'react',
@@ -196,13 +200,12 @@ const projects = [
       },
     ],
     image: leaderboard,
-    repo: 'https://github.com/shaqdeff/Leaderboard',
-    demo: 'https://shaqdeff.github.io/Leaderboard/',
+    repo: 'https://github.com/GaurishBudhiraja/Intrusion-Detection-ML',
   },
   {
     id: 'project-3',
-    name: 'Math Magicians',
-    description: 'This is a single-page calculator app built with React',
+    name: 'Sith-Portal Web App',
+    description: 'Built a community-driven web application with user profiles, posts, and interaction features using TypeScript and modern front-end practices; focused on scalable UI and feature-driven development.',
     tags: [
       {
         name: 'nextjs',
@@ -218,13 +221,12 @@ const projects = [
       },
     ],
     image: math,
-    repo: 'https://github.com/shaqdeff/Math-Magicians',
-    demo: 'https://inspiring-medovik-37d3b3.netlify.app/',
+    repo: 'https://github.com/GaurishBudhiraja/SithPortal',
   },
   {
     id: 'project-4',
-    name: 'Movie Metro',
-    description: `A single-page application that allows users to search for any movie or show's ratings and its details.`,
+    name: 'Android APK Backdooring',
+    description: `Built a controlled proof-of-concept backdoor to test Android 13 vulnerabilities and remote access using Python,Android and Metasploit.`,
     tags: [
       {
         name: 'nextjs',
@@ -240,14 +242,12 @@ const projects = [
       },
     ],
     image: movie,
-    repo: 'https://github.com/shaqdeff/Movie-Metro',
-    demo: 'https://movie-metro.netlify.app/',
   },
   {
     id: 'project-5',
-    name: 'Nyeusi Fest Site',
+    name: 'IoT Systems',
     description:
-      'This is a demo concert website for a music festival called Nyeusi.',
+      'Designed IoT solutions with sensors and microcontrollers for automated waste management and water-efficient irrigation - Smart Dustbin and Smart Irrigation System.',
     tags: [
       {
         name: 'nextjs',
@@ -263,8 +263,6 @@ const projects = [
       },
     ],
     image: nyeusi,
-    repo: 'https://github.com/shaqdeff/Nyeusi-Fest-Site',
-    demo: 'https://shaqdeff.github.io/Nyeusi-Fest-Site/',
   },
 ];
 
