@@ -27,6 +27,7 @@ import {
   dcc,
   kelhel,
   microverse,
+  microsoftClub,
 } from '../assets';
 
 export const navLinks = [
@@ -155,6 +156,13 @@ const experiences = [
     icon: kelhel,
     iconBg: '#333333',
     date: 'Sept 2025 - Present',
+  },
+  {
+    title: 'Cyber Security Member',
+    company_name: 'Microsoft Innovation Club',
+    icon: microsoftClub,
+    iconBg: '#333333',
+    date: 'Oct 2025 - Present',
   },
 ];
 
