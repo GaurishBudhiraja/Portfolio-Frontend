@@ -42,6 +42,7 @@ import coverhunt from './company/coverhunt.png';
 import dcc from './company/dcc.png';
 import kelhel from './company/kelhel.png';
 import microverse from './company/microverse.png';
+import microsoftClub from './company/microsoft-club.png';
 
 import komikult from './projects/komikult.png';
 import leaderboard from './projects/leaderboard.png';
@@ -96,4 +97,6 @@ export {
   dcc,
   kelhel,
   microverse,
+  microsoftClub,
 };
+
