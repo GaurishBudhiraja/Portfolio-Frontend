@@ -1,3 +1,4 @@
+import React from 'react';
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -71,7 +72,7 @@ const Experience = () => {
             <ExperienceCard key={index} experience={experience} />
           ))}
 
-          {/* Resume link */}
+          {/* Resume link as a clean anchor */}
           <VerticalTimelineElement
             contentStyle={{
               background: '#eaeaec',
@@ -97,7 +98,7 @@ const Experience = () => {
             }
           >
             <a
-              href="https://acrobat.adobe.com/id/urn:aaid:sc:AP:a7a3d2f8-1031-4f6f-9232-a7b9a768a88c" // replace with your resume link
+              href="https://acrobat.adobe.com/id/urn:aaid:sc:AP:a7a3d2f8-1031-4f6f-9232-a7b9a768a88c"
               target="_blank"
               rel="noopener noreferrer"
               className="live-demo inline-flex justify-between items-center sm:text-[18px] text-[14px] text-timberWolf font-bold font-beckman py-4 px-4 whitespace-nowrap gap-2 sm:w-[180px] sm:h-[58px] w-[150px] h-[46px] rounded-[10px] bg-jetLight sm:mt-[22px] mt-[16px] hover:bg-battleGray hover:text-eerieBlack transition duration-[0.2s] ease-in-out"
