@@ -15,7 +15,6 @@ const ServiceCard = ({ index, title, icon, link }) => {
     </div>
   );
 
-  // if link is provided, wrap in anchor; otherwise plain div
   return (
     <motion.div
       variants={fadeIn('right', 'spring', 0.5 * index, 0.75)}
