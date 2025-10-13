@@ -30,28 +30,21 @@ const ServiceCard = ({ index, title, icon, link }) => {
 const About = () => {
   return (
     <div className="-mt-[6rem]">
-      {/* Header: center on mobile, left on desktop */}
-      <motion.div variants={textVariant()} className="px-4 sm:px-0">
-        <p className={`${styles.sectionSubText} text-center sm:text-left`}>Introduction</p>
-        <h2 className={`${styles.sectionHeadText} text-center sm:text-left`}>Overview.</h2>
+      <motion.div variants={textVariant()}>
+        <p className={styles.sectionSubText}>Introduction</p>
+        <h2 className={styles.sectionHeadText}>Overview.</h2>
       </motion.div>
 
-      {/* Paragraph: centered on mobile, left on desktop */}
       <motion.p
         variants={fadeIn('', '', 0.1, 1)}
-        className="mt-4 text-taupe text-[18px] max-w-3xl leading-[30px] mx-4 sm:mx-0 text-center sm:text-left"
+        className="mt-4 text-taupe text-[18px] max-w-3xl leading-[30px]"
       >
         I am a passionate and driven 2nd-year Computer Science & Engineering student with strong interests in Cybersecurity, Linux systems, AI/ML, and IoT. Over the past year, I have actively transitioned from learning fundamental programming and data structures to building real-world projects that demonstrate practical problem-solving and technical expertise. I have hands-on experience in ethical hacking, ML-based intrusion detection, AI-driven personal assistants, and embedded systems. Through my projects, I have developed a strong ability to apply theoretical knowledge to real-world scenarios, adapt to new technologies quickly, and deliver solutions that are both innovative and effective.
       </motion.p>
 
-      {/* Service cards container: center on mobile, keep existing layout on desktop */}
-      <div className="mt-20 flex flex-wrap gap-10 justify-center sm:justify-start px-4 sm:px-0">
+      <div className="mt-20 flex flex-wrap gap-10">
         {services.map((service, index) => (
-          // on mobile each card takes full width (w-full) but limited by max-w,
-          // on desktop it behaves as before.
-          <div key={service.title} className="w-full sm:w-auto max-w-[340px]">
-            <ServiceCard index={index} {...service} />
-          </div>
+          <ServiceCard key={service.title} index={index} {...service} />
         ))}
       </div>
     </div>
