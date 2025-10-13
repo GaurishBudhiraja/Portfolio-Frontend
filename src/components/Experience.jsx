@@ -7,7 +7,7 @@ import 'react-vertical-timeline-component/style.min.css';
 import { styles } from '../styles';
 import { experiences } from '../constants';
 import { SectionWrapper } from '../hoc';
-import { download, downloadHover } from '../assets';
+import { download } from '../assets';
 import { textVariant } from '../utils/motion';
 
 const ExperienceCard = ({ experience }) => (
@@ -100,13 +100,13 @@ const Experience = () => {
               href="https://acrobat.adobe.com/id/urn:aaid:sc:AP:a7a3d2f8-1031-4f6f-9232-a7b9a768a88c" // replace with your resume link
               target="_blank"
               rel="noopener noreferrer"
-              className="live-demo flex justify-between sm:text-[18px] text-[14px] text-timberWolf font-bold font-beckman items-center py-5 pl-3 pr-3 whitespace-nowrap gap-1 sm:w-[148px] sm:h-[58px] w-[125px] h-[46px] rounded-[10px] bg-jetLight sm:mt-[22px] mt-[16px] hover:bg-battleGray hover:text-eerieBlack transition duration-[0.2s] ease-in-out"
+              className="live-demo inline-flex justify-between items-center sm:text-[18px] text-[14px] text-timberWolf font-bold font-beckman py-4 px-4 whitespace-nowrap gap-2 sm:w-[180px] sm:h-[58px] w-[150px] h-[46px] rounded-[10px] bg-jetLight sm:mt-[22px] mt-[16px] hover:bg-battleGray hover:text-eerieBlack transition duration-[0.2s] ease-in-out"
             >
               MY RESUME
               <img
                 src={download}
                 alt="download"
-                className="download-btn sm:w-[26px] sm:h-[26px] w-[23px] h-[23px] object-contain"
+                className="download-btn sm:w-[26px] sm:h-[26px] w-[23px] h-[23px] object-contain ml-2"
               />
             </a>
           </VerticalTimelineElement>
