@@ -7,13 +7,13 @@ import { textVariant } from '../utils/motion';
 const certBoxes = [
   {
     title: 'Blue Team Junior Analyst – Security Blue Team',
-    content: 'DFIR, OSINT, Threat Hunting, Dark Web Operations, SOC Operations',
+    content: 'DFIR, OSINT, Threat Hunting, Dark Web Operations, Vulnerability Management, Network Analysis, Wireshark, Traffic Anomaly Detection',
     img: '/assets/certs/sbt.png',
     pdf: '/assets/certs/sbt.pdf',
   },
   {
     title: 'Network Security Professional – Palo Alto Networks',
-    content: 'NGFW, Panorama, SASE, CDSS, Enterprise Firewall Architecture',
+    content: 'NGFW, Panorama, SASE, CDSS, Enterprise Firewall Architecture, PCAP Forensics',
     img: '/assets/certs/paloalto.png',
     pdf: '/assets/certs/paloalto.pdf',
   },
@@ -24,16 +24,16 @@ const certBoxes = [
     pdf: '/assets/certs/ibm.pdf',
   },
   {
-    title: 'Career Essentials in AI – Microsoft & LinkedIn',
-    content: 'AI Automation, ML Concepts, Security Analytics',
-    img: '/assets/certs/ai.png',
-    pdf: '/assets/certs/ai.pdf',
+    title: 'Career Essentials in Generative AI – Microsoft & LinkedIn',
+    content: 'AI Automation, Computer Ethics, Prompt Engineering',
+    img: '/assets/certs/aia.png',
+    pdf: '/assets/certs/aia.pdf',
   },
   {
-    title: 'Network Analysis – Security Blue Team',
-    content: 'PCAP Forensics, Wireshark, Traffic Anomaly Detection',
-    img: '/assets/certs/network.png',
-    pdf: '/assets/certs/network.pdf',
+    title: 'Career Essentials in Software Development – Microsoft & LinkedIn',
+    content: 'Python, Software Development, Programming Concepts',
+    img: '/assets/certs/ais.png',
+    pdf: '/assets/certs/ais.pdf',
   },
 ];
 
