@@ -39,7 +39,9 @@ const About = () => {
         variants={fadeIn('', '', 0.1, 1)}
         className="mt-4 text-taupe text-[18px] max-w-3xl leading-[30px]"
       >
-        I am a passionate and driven 2nd-year Computer Science & Engineering student with strong interests in Cybersecurity, Linux systems, AI/ML, and IoT. Over the past year, I have actively transitioned from learning fundamental programming and data structures to building real-world projects that demonstrate practical problem-solving and technical expertise. I have hands-on experience in ethical hacking, ML-based intrusion detection, AI-driven personal assistants, and embedded systems. Through my projects, I have developed a strong ability to apply theoretical knowledge to real-world scenarios, adapt to new technologies quickly, and deliver solutions that are both innovative and effective.
+      I am a motivated Computer Science & Engineering undergraduate specializing in Cybersecurity, Linux security infrastructure, and network defense engineering. Over the past year, I have transitioned from core programming and data structures into building real-world security systems, performing vulnerability research, and developing defensive and offensive cybersecurity solutions.
+      My work spans ethical hacking, blue team operations, Linux server hardening, network traffic analysis, ML-based intrusion detection, AI-driven automation, and embedded security systems. I actively work with security tools such as Burp Suite, Metasploit, Wireshark, Nmap, and SIEM environments, and regularly practice real-world attack and defense scenarios through CTF platforms.
+      Through hands-on projects and applied research, I have developed the ability to translate theoretical security concepts into practical, scalable, and resilient systems. I adapt rapidly to new technologies and am deeply motivated to contribute to production-grade cybersecurity infrastructure, SOC operations, and network security engineering.
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">
