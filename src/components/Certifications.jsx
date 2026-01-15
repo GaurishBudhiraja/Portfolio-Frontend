@@ -65,17 +65,17 @@ const Certifications = () => {
             <motion.div
               key={index}
               whileHover={{ scale: 1.05, boxShadow: '0 0 35px rgba(0,255,255,.6)' }}
-              className="bg-jetLight border-2 border-gray-700 rounded-xl min-w-[320px] p-6 flex-shrink-0 text-center"
+              className="bg-jetLight border-2 border-gray-700 rounded-xl min-w-[320px] h-[430px] p-6 flex-shrink-0 text-center flex flex-col"
             >
               <a href={box.pdf} target="_blank" rel="noopener noreferrer">
-              <img src={box.img} className="h-[160px] object-contain mx-auto mb-4 hover:scale-105 transition" />
+              <img src={box.img} className="h-[160px] w-full object-contain mb-4" />
               </a>
               <a href={box.pdf} target="_blank">
-                <h3 className="text-timberWolf font-extrabold text-xl mb-2 hover:underline">
-                  {box.title}
+                <h3 className="text-timberWolf font-extrabold text-xl mb-2 leading-snug line-clamp-2">
+                {box.title}
                 </h3>
               </a>
-              <p className="text-taupe text-sm leading-relaxed">{box.content}</p>
+              <p className="text-taupe text-sm leading-relaxed line-clamp-3">{box.content}</p>
             </motion.div>
           ))}
 
