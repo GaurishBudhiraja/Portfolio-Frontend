@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { useRef } from 'react';
 import { SectionWrapper } from '../hoc';
 import { styles } from '../styles';
 import { textVariant } from '../utils/motion';
@@ -7,26 +8,42 @@ const certBoxes = [
   {
     title: 'Blue Team Junior Analyst – Security Blue Team',
     content: 'DFIR, OSINT, Threat Hunting, Dark Web Operations, SOC Operations',
+    img: '/assets/certs/sbt.png',
+    pdf: '/assets/certs/sbt.pdf',
   },
   {
     title: 'Network Security Professional – Palo Alto Networks',
     content: 'NGFW, Panorama, SASE, CDSS, Enterprise Firewall Architecture',
+    img: '/assets/certs/paloalto.png',
+    pdf: '/assets/certs/paloalto.pdf',
   },
   {
     title: 'Cybersecurity Essentials – IBM',
     content: 'Security Operations, Threat Modeling, Vulnerability Management',
+    img: '/assets/certs/ibm.png',
+    pdf: '/assets/certs/ibm.pdf',
   },
   {
     title: 'Career Essentials in AI – Microsoft & LinkedIn',
     content: 'AI Automation, ML Concepts, Security Analytics',
+    img: '/assets/certs/ai.png',
+    pdf: '/assets/certs/ai.pdf',
   },
   {
     title: 'Network Analysis – Security Blue Team',
     content: 'PCAP Forensics, Wireshark, Traffic Anomaly Detection',
+    img: '/assets/certs/network.png',
+    pdf: '/assets/certs/network.pdf',
   },
 ];
 
 const Certifications = () => {
+  const slider = useRef(null);
+
+  const slide = (dir) => {
+    slider.current.scrollLeft += dir * 350;
+  };
+
   return (
     <>
       <motion.div variants={textVariant()} className="mb-12">
@@ -36,29 +53,36 @@ const Certifications = () => {
         </h2>
       </motion.div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-12">
-        {certBoxes.map((box, index) => (
-          <motion.div
-            key={index}
-            whileHover={{
-              rotateX: 10,
-              rotateY: 10,
-              scale: 1.05,
-              boxShadow: '0 15px 30px rgba(0,255,255,0.4)',
-            }}
-            transition={{ type: 'spring', stiffness: 250, damping: 20 }}
-            className="bg-jetLight border-2 border-gray-700 rounded-xl p-8 min-h-[180px] flex items-center justify-center cursor-pointer"
-          >
-            <div className="text-center">
-              <h3 className="text-timberWolf font-extrabold text-2xl sm:text-3xl mb-3">
-                {box.title}
-              </h3>
-              <p className="text-taupe text-sm sm:text-base leading-relaxed">
-                {box.content}
-              </p>
-            </div>
-          </motion.div>
-        ))}
+      <div className="relative">
+
+        {/* LEFT */}
+        <button onClick={() => slide(-1)} className="slider-btn left">‹</button>
+
+        {/* SLIDER */}
+        <div ref={slider} className="flex overflow-x-auto gap-8 scroll-smooth no-scrollbar">
+
+          {certBoxes.map((box, index) => (
+            <motion.div
+              key={index}
+              whileHover={{ scale: 1.05, boxShadow: '0 0 35px rgba(0,255,255,.6)' }}
+              className="bg-jetLight border-2 border-gray-700 rounded-xl min-w-[320px] p-6 flex-shrink-0 text-center"
+            >
+              <a href={box.pdf} target="_blank">
+                <img src={box.img} className="h-40 mx-auto mb-4 object-contain" />
+              </a>
+              <a href={box.pdf} target="_blank">
+                <h3 className="text-timberWolf font-extrabold text-xl mb-2 hover:underline">
+                  {box.title}
+                </h3>
+              </a>
+              <p className="text-taupe text-sm leading-relaxed">{box.content}</p>
+            </motion.div>
+          ))}
+
+        </div>
+
+        {/* RIGHT */}
+        <button onClick={() => slide(1)} className="slider-btn right">›</button>
       </div>
     </>
   );
