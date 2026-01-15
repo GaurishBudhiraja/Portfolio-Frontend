@@ -6,6 +6,7 @@ import {
   Hero,
   Navbar,
   Tech,
+  Certifications,
   Projects,
 } from './components';
 
@@ -45,6 +46,11 @@ const App = () => {
           </div>
         </div>
 
+        {/* Certifications */}
+        <div className="bg-tech bg-cover bg-center bg-no-repeat pb-10" id="certifications">
+          <Certifications />
+        </div>
+        
         {/* Contact */}
         <div className="relative z-0" id="contact">
           <Contact />
