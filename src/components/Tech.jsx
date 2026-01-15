@@ -6,7 +6,7 @@ import { textVariant } from '../utils/motion';
 const skillBoxes = [
   {
     title: 'Programming Languages',
-    content: 'C, C++, Python, Java',
+    content: 'C, C++, Python, Java, HTML, CSS, Javascript, SQL',
   },
   {
     title: 'Tools & Platforms',
@@ -16,7 +16,7 @@ const skillBoxes = [
   {
     title: 'Cybersecurity',
     content:
-      'IDS, Networking, Bash Scripting, Wifi Handshake, Phishing, Wireshark, Burp Suite, Nmap, John The Ripper, Hydra, Metasploit',
+      'Network Security, IDS/IPS, NGFW, SASE, SD-WAN, Palo Alto Panorama, Network Traffic Analysis, PCAP Forensics, Wireshark, Suricata, Threat Hunting, SOC Operations, Digital Forensics, OSINT, Bash Scripting, Security Automation, Web & System Exploitation, Vulnerability Assessment, Phishing Simulation, Wireless Attacks (WiFi Handshake, Evil Twin), Burp Suite, Metasploit, Nmap, Hydra, John The Ripper, SQLi, XSS, Android Security Testing, Dark Web Operations',
   },
   {
     title: 'Other Skills',
