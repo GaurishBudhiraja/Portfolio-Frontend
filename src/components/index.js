@@ -10,4 +10,4 @@ import Certifications from './Certifications';
 import Contact from './Contact';
 
 
-export { Hero, Navbar, About, Tech, Experience, Projects, Contact, BallCanvas};
+export { Hero, Navbar, About, Tech, Experience, Projects, Certifications, Contact, BallCanvas};
