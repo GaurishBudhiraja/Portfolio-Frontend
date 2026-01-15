@@ -72,7 +72,7 @@ const services = [
   {
     title: 'Resume',
     icon: prototyping,
-    link: 'https://acrobat.adobe.com/id/urn:aaid:sc:AP:a7a3d2f8-1031-4f6f-9232-a7b9a768a88c',
+    link: 'https://acrobat.adobe.com/id/urn:aaid:sc:ap:28f76cb8-0f0c-4e49-aedf-1a9ce430f4b6',
   },
 ];
 
