@@ -67,8 +67,8 @@ const Certifications = () => {
               whileHover={{ scale: 1.05, boxShadow: '0 0 35px rgba(0,255,255,.6)' }}
               className="bg-jetLight border-2 border-gray-700 rounded-xl min-w-[320px] p-6 flex-shrink-0 text-center"
             >
-              <a href={box.pdf} target="_blank">
-                <img src={box.img} className="h-40 mx-auto mb-4 object-contain" />
+              <a href={box.pdf} target="_blank" rel="noopener noreferrer">
+              <img src={box.img} className="h-[160px] object-contain mx-auto mb-4 hover:scale-105 transition" />
               </a>
               <a href={box.pdf} target="_blank">
                 <h3 className="text-timberWolf font-extrabold text-xl mb-2 hover:underline">
