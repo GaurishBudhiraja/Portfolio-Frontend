@@ -52,7 +52,7 @@ const Hero = () => {
               </h1>
 
               <p className="mt-4 text-eerieBlack text-[16px] sm:text-[18px] leading-relaxed max-w-lg">
-                I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.
+                I am a motivated and adaptable individual who is always eager to learn and take on new challenges. With a strong passion for growth and continuous improvement, I strive to deliver quality work and meaningful results. I enjoy exploring new opportunities, developing new skills, and contributing positively through dedication and consistency.
               </p>
             </div>
 
