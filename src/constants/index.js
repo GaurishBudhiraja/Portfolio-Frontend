@@ -171,29 +171,6 @@ const experiences = [
 const projects = [
   {
     id: 'project-1',
-    name: 'Remote Backdooring Access',
-    description:
-      'Developed a TCP-based remote command execution and endpoint telemetry framework for analyzing adversarial communication channels, Linux process execution behavior, and detection engineering workflows.',
-    tags: [
-      {
-        name: 'Python',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'Linux',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'TCP/IP',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: komikult,
-    repo: 'https://github.com/GaurishBudhiraja/Remote-Command-Execution-Framework',
-  },
-
-  {
-    id: 'project-2',
     name: 'ML-Based IDS',
     description:
       'Developed a machine learning based intrusion detection system for anomaly detection and malicious traffic classification using security-focused datasets and neural network pipelines.',
@@ -211,8 +188,31 @@ const projects = [
         color: 'pink-text-gradient',
       },
     ],
-    image: leaderboard,
+    image: komikult,
     repo: 'https://github.com/GaurishBudhiraja/Intrusion-Detection-ML',
+  },
+
+  {
+    id: 'project-2',
+    name: 'Remote Backdooring Access',
+    description:
+      'Developed a TCP-based remote command execution and endpoint telemetry framework for analyzing adversarial communication channels, Linux process execution behavior, and detection engineering workflows.',
+    tags: [
+      {
+        name: 'Python',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'Linux',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'TCP/IP',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: leaderboard,
+    repo: 'https://github.com/GaurishBudhiraja/Remote-Command-Execution-Framework',
   },
 
   {
