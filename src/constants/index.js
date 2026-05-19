@@ -168,91 +168,97 @@ const experiences = [
     date: 'Oct 2025 - Present',
   },
 ];
-
 const projects = [
   {
     id: 'project-1',
-    name: 'ISHAL Assistant',
-    description: 'Developed an AI assistant for voice commands, text-to-speech, and system automation with modular command execution using Python & NLP',
+    name: 'Remote Command Execution Framework',
+    description:
+      'Developed a TCP-based remote command execution and endpoint telemetry framework for analyzing adversarial communication channels, Linux process execution behavior, and detection engineering workflows.',
     tags: [
       {
-        name: 'react',
+        name: 'Python',
         color: 'blue-text-gradient',
       },
       {
-        name: 'mongodb',
+        name: 'Linux',
         color: 'green-text-gradient',
       },
       {
-        name: 'tailwind',
+        name: 'TCP/IP',
         color: 'pink-text-gradient',
       },
     ],
     image: komikult,
-    repo: 'https://github.com/GaurishBudhiraja',
+    repo: 'https://github.com/GaurishBudhiraja/Remote-Command-Execution-Framework',
   },
+
   {
     id: 'project-2',
-    name: 'IDS Model using ML',
+    name: 'ML-Based Intrusion Detection System',
     description:
-      ' Implemented ML-based IDS for anomaly detection in undersea optical fiber networks with optimized threat classification.',
+      'Developed a machine learning based intrusion detection system for anomaly detection and malicious traffic classification using security-focused datasets and neural network pipelines.',
     tags: [
       {
-        name: 'react',
+        name: 'Python',
         color: 'blue-text-gradient',
       },
       {
-        name: 'restapi',
+        name: 'TensorFlow',
         color: 'green-text-gradient',
       },
       {
-        name: 'scss',
+        name: 'Machine Learning',
         color: 'pink-text-gradient',
       },
     ],
     image: leaderboard,
     repo: 'https://github.com/GaurishBudhiraja/Intrusion-Detection-ML',
   },
+
   {
     id: 'project-3',
-    name: 'Sith-Portal Web App',
-    description: 'Built a community-driven web application with user profiles, posts, and interaction features using TypeScript and modern front-end practices; focused on scalable UI and feature-driven development.',
+    name: 'VIT SkillMatch',
+    description:
+      'Built a full-stack internship shortlisting and recruitment management platform with SQL-based eligibility filtering and scalable backend workflows.',
     tags: [
       {
-        name: 'nextjs',
+        name: 'TypeScript',
         color: 'blue-text-gradient',
       },
       {
-        name: 'supabase',
+        name: 'SQL',
         color: 'green-text-gradient',
       },
       {
-        name: 'css',
+        name: 'Full-Stack',
         color: 'pink-text-gradient',
       },
     ],
     image: math,
-    repo: 'https://github.com/GaurishBudhiraja/SithPortal',
+    repo: 'https://github.com/GaurishBudhiraja/VIT-SkillMatch',
   },
+
   {
     id: 'project-4',
-    name: 'Android APK Backdooring',
-    description: `Built a controlled proof-of-concept backdoor to test Android 13 vulnerabilities and remote access using Python,Android and Metasploit.`,
+    name: 'ISHAL AI Assistant',
+    description:
+      'Developed an AI-powered automation assistant integrating modular command execution, NLP workflows, text-to-speech functionality, and intelligent system automation.',
     tags: [
       {
-        name: 'nextjs',
+        name: 'Python',
         color: 'blue-text-gradient',
       },
       {
-        name: 'supabase',
+        name: 'Automation',
         color: 'green-text-gradient',
       },
       {
-        name: 'css',
+        name: 'NLP',
         color: 'pink-text-gradient',
       },
     ],
     image: movie,
+    repo: 'https://github.com/GaurishBudhiraja/ISHAL_ASSISTANT',
   },
   {
     id: 'project-5',
@@ -274,6 +280,7 @@ const projects = [
       },
     ],
     image: nyeusi,
+    repo: 'https://github.com/GaurishBudhiraja',
   },
 ];
 
