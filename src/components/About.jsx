@@ -39,9 +39,9 @@ const About = () => {
         variants={fadeIn('', '', 0.1, 1)}
         className="mt-4 text-taupe text-[18px] max-w-3xl leading-[30px]"
       >
-      I am a motivated Computer Science & Engineering undergraduate specializing in Cybersecurity, Linux security infrastructure, and network defense engineering. Over the past year, I have transitioned from core programming and data structures into building real-world security systems, performing vulnerability research, and developing defensive and offensive cybersecurity solutions.
-      My work spans ethical hacking, blue team operations, Linux server hardening, network traffic analysis, ML-based intrusion detection, AI-driven automation, and embedded security systems. I actively work with security tools such as Burp Suite, Metasploit, Wireshark, Nmap, and SIEM environments, and regularly practice real-world attack and defense scenarios through CTF platforms.
-      Through hands-on projects and applied research, I have developed the ability to translate theoretical security concepts into practical, scalable, and resilient systems. I adapt rapidly to new technologies and am deeply motivated to contribute to production-grade cybersecurity infrastructure, SOC operations, and network security engineering.
+      I am a Computer Science & Engineering undergraduate focused on Cybersecurity, Linux systems, DevSecOps, and network security engineering. Over time, I have evolved from core programming and data structures into building practical security-focused systems, exploring vulnerability research, and developing both defensive and offensive cybersecurity solutions.
+      My experience includes Linux server hardening, network traffic analysis, intrusion detection systems, security automation, cloud and container-based workflows, and full-stack engineering. I actively work with technologies and tools such as Docker, Kubernetes, Burp Suite, Metasploit, Wireshark, Nmap, GitHub, and SIEM-based environments while continuously practicing real-world attack and defense scenarios through CTF platforms.
+      Through hands-on projects, research, and continuous learning, I aim to design scalable, resilient, and security-oriented systems that bridge software engineering, infrastructure security, and DevSecOps practices. I am highly motivated to contribute to production-grade cybersecurity infrastructure, SOC operations, detection engineering, and secure software development environments.
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">
