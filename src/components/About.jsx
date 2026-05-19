@@ -29,7 +29,7 @@ const ServiceCard = ({ index, title, icon, link }) => {
 
 const About = () => {
   return (
-    <div className="-mt-[6rem]">
+    <div className="-mt-[6rem] px-4 sm:px-0">
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>Introduction</p>
         <h2 className={styles.sectionHeadText}>Overview.</h2>
@@ -37,7 +37,7 @@ const About = () => {
 
       <motion.p
         variants={fadeIn('', '', 0.1, 1)}
-        className="mt-4 text-taupe text-[18px] max-w-3xl leading-[30px]"
+        className="mt-4 text-secondary sm:text-[17px] text-[15px] max-w-3xl leading-[30px] sm:text-left text-center px-1 sm:px-0 break-words"
       >
       I am a Computer Science & Engineering undergraduate focused on Cybersecurity, Linux systems, DevSecOps, and network security engineering. Over time, I have evolved from core programming and data structures into building practical security-focused systems, exploring vulnerability research, and developing both defensive and offensive cybersecurity solutions.
       My experience includes Linux server hardening, network traffic analysis, intrusion detection systems, security automation, cloud and container-based workflows, and full-stack engineering. I actively work with technologies and tools such as Docker, Kubernetes, Burp Suite, Metasploit, Wireshark, Nmap, GitHub, and SIEM-based environments while continuously practicing real-world attack and defense scenarios through CTF platforms.
