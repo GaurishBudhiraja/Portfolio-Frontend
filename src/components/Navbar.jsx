@@ -10,13 +10,15 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`${styles.paddingX} w-full flex items-center py-2 fixed 
-      top-0 z-20 bg-flashWhite sm:opacity-[0.97] xxs:h-[12vh]`}
+      className={`${styles.paddingX} w-full flex items-center py-3 fixed top-0 z-20 
+      bg-[rgba(10,10,10,0.78)] backdrop-blur-md border-b border-white/10`}
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
+        
+        {/* LOGO + NAME */}
         <Link
           to="/"
-          className="flex items-center gap-2"
+          className="flex items-center gap-3"
           onClick={() => {
             setActive('');
             window.scrollTo(0, 0);
@@ -25,22 +27,22 @@ const Navbar = () => {
           <img
             src={logo}
             alt="logo"
-            className="sm:w-[50px] sm:h-[50px] w-[45px] h-[45px] object-contain"
+            className="w-[48px] h-[48px] object-contain"
           />
-          <span className="text-[24px] sm:text-[28px] font-bold text-black">
+
+          <h1 className="text-white text-[24px] font-bold font-poppins tracking-normal">
             Gaurish Budhiraja
-          </span>
+          </h1>
         </Link>
 
-        {/* Desktop Links */}
-        <ul className="list-none hidden sm:flex flex-row gap-14 mt-2">
+        {/* DESKTOP NAV */}
+        <ul className="list-none hidden sm:flex flex-row gap-8 items-center">
           {navLinks.map((nav) => (
             <li
               key={nav.id}
               className={`${
-                active === nav.title ? 'text-french' : 'text-eerieBlack'
-              } hover:text-taupe text-[21px] font-medium font-mova 
-                uppercase tracking-[3px] cursor-pointer nav-links`}
+                active === nav.title ? 'text-white' : 'text-gray-300'
+              } hover:text-white text-[14px] font-semibold font-poppins uppercase tracking-[2px] cursor-pointer transition-all duration-200`}
               onClick={() => setActive(nav.title)}
             >
               <a href={`#${nav.id}`}>{nav.title}</a>
@@ -48,14 +50,13 @@ const Navbar = () => {
           ))}
         </ul>
 
-        {/* Mobile */}
+        {/* MOBILE MENU */}
         <div className="sm:hidden flex flex-1 justify-end items-center">
           {toggle ? (
             <div
-              className={`p-4 bg-flashWhite opacity-[0.98] absolute 
-                top-0 left-0 w-60 max-h-screen overflow-y-auto z-10 rounded-lg menu ${toggle ? 'menu-open' : 'menu-close'}`}
+              className={`p-5 bg-[rgba(15,15,15,0.96)] absolute top-0 right-0 w-[220px] min-h-screen z-20 backdrop-blur-lg`}
             >
-              <div className="flex justify-end mb-4">
+              <div className="flex justify-end mb-6">
                 <img
                   src={close}
                   alt="close"
@@ -64,13 +65,13 @@ const Navbar = () => {
                 />
               </div>
 
-              <ul className="list-none flex flex-col gap-4">
+              <ul className="list-none flex flex-col gap-6">
                 {navLinks.map((nav) => (
                   <li
                     key={nav.id}
                     className={`${
-                      active === nav.title ? 'text-french' : 'text-eerieBlack'
-                    } text-xl font-bold font-arenq uppercase tracking-[1px] cursor-pointer`}
+                      active === nav.title ? 'text-white' : 'text-gray-300'
+                    } text-[15px] font-semibold font-poppins uppercase tracking-[2px] cursor-pointer`}
                     onClick={() => {
                       setToggle(false);
                       setActive(nav.title);
@@ -85,7 +86,7 @@ const Navbar = () => {
             <img
               src={menu}
               alt="menu"
-              className="w-8 h-8 object-contain cursor-pointer"
+              className="w-7 h-7 object-contain cursor-pointer"
               onClick={() => setToggle(true)}
             />
           )}
