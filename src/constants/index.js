@@ -171,7 +171,7 @@ const experiences = [
 const projects = [
   {
     id: 'project-1',
-    name: 'Remote Command Execution Framework',
+    name: 'Remote Execution Framework',
     description:
       'Developed a TCP-based remote command execution and endpoint telemetry framework for analyzing adversarial communication channels, Linux process execution behavior, and detection engineering workflows.',
     tags: [
@@ -194,7 +194,7 @@ const projects = [
 
   {
     id: 'project-2',
-    name: 'ML-Based Intrusion Detection System',
+    name: 'ML-Based IDS',
     description:
       'Developed a machine learning based intrusion detection system for anomaly detection and malicious traffic classification using security-focused datasets and neural network pipelines.',
     tags: [
@@ -260,6 +260,7 @@ const projects = [
     image: movie,
     repo: 'https://github.com/GaurishBudhiraja/ISHAL_ASSISTANT',
   },
+  
   {
     id: 'project-5',
     name: 'IoT Systems',
