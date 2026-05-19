@@ -7,41 +7,56 @@ import { send, sendHover } from '../assets';
 
 const Contact = () => {
   const formRef = useRef();
-  const [form, setForm] = useState({ name: '', email: '', message: '' });
+
+  const [form, setForm] = useState({
+    name: '',
+    email: '',
+    message: '',
+  });
+
   const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setForm({ ...form, [name]: value });
+
+    setForm({
+      ...form,
+      [name]: value,
+    });
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
     setLoading(true);
 
+    // store form data before reset
+    const formData = { ...form };
+
+    // instant success popup
+    alert('Thank you! I will get back to you soon.');
+
+    // clear form instantly
+    setForm({
+      name: '',
+      email: '',
+      message: '',
+    });
+
+    // update button instantly
+    setLoading(false);
+
+    // send request silently in background
     try {
-      const response = await fetch(
-        'https://portfolio-backend-teim.onrender.com/send', // Railway backend URL
-        {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(form),
-        }
-      );
-
-      const data = await response.json();
-
-      if (response.ok) {
-        alert('Thank you! I will get back to you soon.');
-        setForm({ name: '', email: '', message: '' });
-      } else {
-        alert(data.message || 'Something went wrong. Please try again.');
-      }
+      await fetch('https://portfolio-backend-teim.onrender.com/send', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
     } catch (error) {
       console.error(error);
-      alert('Error sending message.');
-    } finally {
-      setLoading(false);
     }
   };
 
@@ -54,6 +69,7 @@ const Contact = () => {
         <p className={`${styles.sectionSubText} text-sm sm:text-base mb-2`}>
           Get in touch
         </p>
+
         <h3 className={`${styles.sectionHeadTextLight} text-2xl sm:text-4xl mb-6`}>
           Contact.
         </h3>
@@ -63,11 +79,12 @@ const Contact = () => {
           onSubmit={handleSubmit}
           className="mt-4 flex flex-col gap-6 font-poppins"
         >
-          {/* Name */}
+          {/* NAME */}
           <label className="flex flex-col mb-4">
             <span className="text-timberWolf font-medium text-sm sm:text-base tracking-wider mb-2">
               YOUR NAME
             </span>
+
             <input
               type="text"
               name="name"
@@ -79,11 +96,12 @@ const Contact = () => {
             />
           </label>
 
-          {/* Email */}
+          {/* EMAIL */}
           <label className="flex flex-col mb-4">
             <span className="text-timberWolf font-medium text-sm sm:text-base tracking-wider mb-2">
               YOUR EMAIL
             </span>
+
             <input
               type="email"
               name="email"
@@ -95,11 +113,12 @@ const Contact = () => {
             />
           </label>
 
-          {/* Message */}
+          {/* MESSAGE */}
           <label className="flex flex-col mb-4">
             <span className="text-timberWolf font-medium text-sm sm:text-base tracking-wider mb-2">
               YOUR MESSAGE
             </span>
+
             <textarea
               rows="6"
               name="message"
@@ -111,20 +130,27 @@ const Contact = () => {
             />
           </label>
 
-          {/* Submit button */}
+          {/* BUTTON */}
           <button
             type="submit"
             className="live-demo flex justify-center items-center gap-3 text-sm sm:text-base text-timberWolf font-bold font-beckman py-3 sm:py-4 whitespace-nowrap sm:w-[130px] sm:h-[50px] w-[100px] h-[44px] rounded-[10px] bg-night hover:bg-battleGray hover:text-eerieBlack transition duration-[0.2s] ease-in-out"
             onMouseOver={() => {
               const el = document.querySelector('.contact-btn');
-              if (el) el.setAttribute('src', sendHover);
+
+              if (el) {
+                el.setAttribute('src', sendHover);
+              }
             }}
             onMouseOut={() => {
               const el = document.querySelector('.contact-btn');
-              if (el) el.setAttribute('src', send);
+
+              if (el) {
+                el.setAttribute('src', send);
+              }
             }}
           >
             {loading ? 'Sending...' : 'Send'}
+
             <img
               src={send}
               alt="send"
