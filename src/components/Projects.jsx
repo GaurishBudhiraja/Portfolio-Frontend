@@ -36,7 +36,7 @@ const ProjectCard = ({
       ) : (
         <div className="absolute bottom-0 p-8 justify-start w-full flex-col bg-[rgba(122,122,122,0.5)] rounded-b-[24px] z-20">
           {/* GitHub Icon only if repo exists */}
-          {repo && index < 3 && (
+          {repo && (
             <div className="absolute inset-0 flex justify-end m-3">
               <div
                 onClick={() => window.open(repo, '_blank')}
