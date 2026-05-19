@@ -171,7 +171,7 @@ const experiences = [
 const projects = [
   {
     id: 'project-1',
-    name: 'Remote Execution Framework',
+    name: 'Remote Backdooring Access',
     description:
       'Developed a TCP-based remote command execution and endpoint telemetry framework for analyzing adversarial communication channels, Linux process execution behavior, and detection engineering workflows.',
     tags: [
