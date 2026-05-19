@@ -6,22 +6,22 @@ import { textVariant } from '../utils/motion';
 const skillBoxes = [
   {
     title: 'Programming Languages',
-    content: 'C, C++, Python, Java, HTML, CSS, Javascript, SQL',
+    content: 'C, C++, Python, Java, JavaScript, SQL, HTML, CSS',
   },
-  {
-    title: 'Tools & Platforms',
-    content:
-      'Linux (Kali, Ubuntu, Arch), Git/GitHub, VS Code, Google Cloud Platform, Docker, Figma',
-  },
+
   {
     title: 'Cybersecurity',
-    content:
-      'Network Security, IDS/IPS, NGFW, SASE, SD-WAN, Palo Alto Panorama, Network Traffic Analysis, PCAP Forensics, Wireshark, Suricata, Threat Hunting, SOC Operations, Digital Forensics, OSINT, Bash Scripting, Security Automation, Web & System Exploitation, Vulnerability Assessment, Phishing Simulation, Wireless Attacks (WiFi Handshake, Evil Twin), Burp Suite, Metasploit, Nmap, Hydra, John The Ripper, SQLi, XSS, Android Security Testing, Dark Web Operations',
+    content: 'Network Security, IDS/IPS, Threat Hunting, SOC Operations, Digital Forensics, OSINT, Vulnerability Assessment, PCAP Analysis, Web Security Testing, Android Security Testing, Wireless Security',
   },
+
   {
-    title: 'Other Skills',
-    content:
-      'OOP, Data Structures & Algorithms, Problem Solving, Generative AI, Computer Ethics',
+    title: 'Tools & Technologies',
+    content: 'Wireshark, Burp Suite, Metasploit, Nmap, Hydra, John the Ripper, Suricata, Palo Alto Panorama, Git/GitHub, VS Code, Figma',
+  },
+
+  {
+    title: 'Platforms & DevOps',
+    content: 'Linux (Kali, Ubuntu, Arch), Docker, Kubernetes, Google Cloud Platform, CI/CD Fundamentals, DevSecOps, Bash Scripting, Security Automation, Computer Networks, Operating Systems, DSA & OOP',
   },
 ];
 
