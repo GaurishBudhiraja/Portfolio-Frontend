@@ -280,7 +280,7 @@ const projects = [
       },
     ],
     image: nyeusi,
-    repo: 'https://github.com/GaurishBudhiraja',
+    repo: 'https://github.com/GaurishBudhiraja/IOT',
   },
 ];
 
