@@ -6,25 +6,25 @@ import { textVariant } from '../utils/motion';
 const skillBoxes = [
   {
     title: 'Programming Languages',
-    content: 'C, C++, Python, Java, JavaScript, SQL, HTML, CSS',
+    content: 'C • C++ • Python • Java • JavaScript • SQL • HTML • CSS • Bash',
   },
 
   {
     title: 'Cybersecurity',
-    content: 'Network Security, IDS/IPS, Threat Hunting, SOC Operations, Digital Forensics, OSINT, Vulnerability Assessment, PCAP Analysis, Web Security Testing, Android Security Testing, Wireless Security',
+    content: 'Network Security • IDS/IPS • Threat Hunting • SOC Operations • Digital Forensics • OSINT • VAPT • Network Traffic Analysis • Web Security Testing • Android Security Testing • Capture The Flag (CTFs)',
   },
 
   {
     title: 'Tools & Technologies',
-    content: 'Wireshark, Burp Suite, Metasploit, Nmap, Hydra, John the Ripper, Suricata, Palo Alto Panorama, Git/GitHub, VS Code, Figma',
+    content: 'Git • GitHub • Linux (Kali, Ubuntu, Arch) • Wireshark • Burp Suite • Metasploit • Nmap • Nessus • VS Code • Figma • Anaconda • TensorFlow • Suricata • Palo Alto Panorama',
   },
 
   {
-    title: 'Platforms & DevOps',
-    content: 'Linux (Kali, Ubuntu, Arch), Docker, Kubernetes, Google Cloud Platform, CI/CD Fundamentals, DevSecOps, Bash Scripting, Security Automation, Computer Networks, Operating Systems, DSA & OOP',
+    title: 'Platforms, Cloud & DevOps',
+    content: 'Linux • AWS • Google Cloud Platform • Docker • Kubernetes • GitHub Actions • Computer Networks • Operating Systems • Bash Scripting • CI/CD Pipelines • Data Structures & Algorithms',
   },
 ];
-
+ 
 const Tech = () => {
   return (
     <>
