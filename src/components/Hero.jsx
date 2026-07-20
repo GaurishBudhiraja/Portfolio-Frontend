@@ -52,7 +52,7 @@ const Hero = () => {
               </h1>
 
               <p className="mt-4 text-eerieBlack text-[16px] sm:text-[18px] leading-relaxed max-w-lg">
-                I am a motivated and adaptable individual who is always eager to learn and take on new challenges. With a strong passion for growth and continuous improvement, I strive to deliver quality work and meaningful results. I enjoy exploring new opportunities, developing new skills, and contributing positively through dedication and consistency.
+                I am a passionate and growth-oriented individual who enjoys learning, creating, and taking on new challenges. I believe in continuous improvement, staying curious, and stepping outside my comfort zone to become a better version of myself every day. My goal is to build meaningful solutions, keep evolving with technology, and create a lasting impact through dedication, consistency, and lifelong learning.
               </p>
             </div>
 
