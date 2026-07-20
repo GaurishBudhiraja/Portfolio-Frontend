@@ -7,21 +7,39 @@ import { textVariant } from '../utils/motion';
 const certBoxes = [
   {
     title: 'Blue Team Junior Analyst – Security Blue Team',
-    content: 'DFIR, OSINT, Threat Hunting, Dark Web Operations, Vulnerability Management, Network Analysis, Wireshark, Traffic Anomaly Detection',
+    content: 'DFIR, SOC Operations, OSINT, Threat Hunting, Dark Web Operations, Vulnerability Management, VAPT, Network & Malware Analysis, Traffic Anomaly Detection',
     img: '/certs/sbt.png',
     pdf: '/certs/sbt.pdf',
   },
   {
     title: 'Network Security Professional – Palo Alto Networks',
-    content: 'NGFW, Panorama, SASE, CDSS, Enterprise Firewall Architecture, PCAP Forensics',
+    content: 'NGFW, Panorama, SASE, CDSS, Enterprise Firewall Architecture, PCAP Forensics, Zero Trust',
     img: '/certs/paloalto.png',
     pdf: '/certs/paloalto.pdf',
   },
   {
     title: 'Cybersecurity Essentials – IBM',
-    content: 'Security Operations, Threat Modeling, Vulnerability Management',
+    content: 'Network Security, Cryptography, Authentication, Threat Management, Risk Management, Information Security',
     img: '/certs/ibm.png',
     pdf: '/certs/ibm.pdf',
+  },
+  {
+    title: 'Cybersecurity Analyst Job Simulation – Forage (Tata)',
+    content: 'Identity & Access Management (IAM), Identity Governance, Access Control, Security Architecture, Risk Assessment',
+    img: '/certs/tata.png',
+    pdf: '/certs/tata.pdf',
+  },
+  {
+    title: 'Cyber Security Operations Job Simulation – Forage (Datacom)',
+    content: 'Cyber Security Operations, Risk Assessment, Threat Identification, Security Analysis, Incident Response',
+    img: '/certs/datacom.png',
+    pdf: '/certs/datacom.pdf',
+  },
+  {
+    title: 'Cybersecurity Job Simulation – Forage (Mastercard)',
+    content: 'Phishing Awareness, Email Security, Security Awareness, Risk Assessment, Threat Detection',
+    img: '/certs/mastercard.png',
+    pdf: '/certs/mastercard.pdf',
   },
   {
     title: 'Career Essentials in Generative AI – Microsoft & LinkedIn',
