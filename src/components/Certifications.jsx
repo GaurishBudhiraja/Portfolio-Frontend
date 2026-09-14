@@ -99,7 +99,7 @@ const Certifications = () => {
                 {box.title}
                 </h3>
               </a>
-              <p className="text-taupe text-sm leading-relaxed line-clamp-2">{box.content}</p>
+              <p className="text-taupe text-sm leading-relaxed">{box.content}</p>
             </motion.div>
           ))}
 
