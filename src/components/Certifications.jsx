@@ -19,7 +19,7 @@ const certBoxes = [
   },
   {
     title: 'Oracle Cloud Infrastructure Certified Architect Associate',
-    content: 'Oracle Cloud Infrastructure (OCI), Cloud Architecture, Compute, Virtual Cloud Networks (VCN), Networking, Load Balancing, Object Storage, Block Volumes, Identity and Access Management (IAM), Cloud Security, High Availability, Fault Domains, Availability Domains, Infrastructure Architecture',
+    content: 'OCI Cloud Architecture, Compute, VCN, Networking, Load Balancing, Object Storage, IAM, Cloud Security, High Availability',
     img: '/certs/oci.png',
     pdf: '/certs/oci.pdf',
   },
