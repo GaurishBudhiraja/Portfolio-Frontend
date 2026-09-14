@@ -18,6 +18,12 @@ const certBoxes = [
     pdf: '/certs/paloalto.pdf',
   },
   {
+    title: 'Oracle Cloud Infrastructure Certified Architect Associate',
+    content: 'Oracle Cloud Infrastructure (OCI), Cloud Architecture, Compute, Virtual Cloud Networks (VCN), Networking, Load Balancing, Object Storage, Block Volumes, Identity and Access Management (IAM), Cloud Security, High Availability, Fault Domains, Availability Domains, Infrastructure Architecture',
+    img: '/certs/oci.png',
+    pdf: '/certs/oci.pdf',
+  },
+  {
     title: 'Cybersecurity Essentials – IBM',
     content: 'Network Security, Cryptography, Authentication, Threat Management, Risk Management, Information Security',
     img: '/certs/ibm.png',
