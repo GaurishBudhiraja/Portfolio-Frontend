@@ -11,17 +11,17 @@ const skillBoxes = [
 
   {
     title: 'Cybersecurity',
-    content: 'Network Security • IDS/IPS • Threat Hunting • SOC Operations • Digital Forensics • OSINT • VAPT • Network Traffic Analysis • Web Security Testing • Android Security Testing • Capture The Flag (CTFs)',
+    content: 'Network Security • API Security • IDS/IPS • Threat Hunting • SOC Operations • Digital Forensics • OSINT • VAPT • Network Traffic Analysis • Web Security Testing • Android Security Testing • Capture The Flag (CTFs)',
   },
 
   {
     title: 'Tools & Technologies',
-    content: 'Git • GitHub • Linux (Kali, Ubuntu, Arch) • Wireshark • Burp Suite • Metasploit • Nmap • Nessus • VS Code • Figma • Anaconda • TensorFlow • Suricata • Palo Alto Panorama',
+    content: 'Git • GitHub • Linux (Kali, Ubuntu, Arch) • Docker • Wireshark • Burp Suite • Nmap • Metasploit • Nessus • Suricata • Palo Alto Panorama • TensorFlow • Scikit-learn • Pandas • NumPy • VS Code',
   },
 
   {
     title: 'Platforms, Cloud & DevOps',
-    content: 'Linux • AWS • Google Cloud Platform • Docker • Kubernetes • GitHub Actions • Computer Networks • Operating Systems • Bash Scripting • CI/CD Pipelines • Data Structures & Algorithms',
+    content: 'AWS • Oracle Cloud Infrastructure (OCI) • Docker • Kubernetes • GitHub Actions • CI/CD • Cloud Architecture • Linux Systems • Bash Scripting • Computer Networks • Operating Systems • Data Structures & Algorithms',
   },
 ];
  
