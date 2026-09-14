@@ -75,7 +75,7 @@ const services = [
   {
     title: 'Resume',
     icon: prototyping,
-    link: 'https://acrobat.adobe.com/id/urn:aaid:sc:AP:04cfa986-bee1-4763-be5e-01adda866db8',
+    link: 'https://acrobat.adobe.com/id/urn:aaid:sc:AP:f4b69711-4918-42fc-8423-e99cd9d4ee0e',
   },
 ];
 
