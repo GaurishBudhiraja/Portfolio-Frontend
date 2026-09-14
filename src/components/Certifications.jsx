@@ -89,7 +89,7 @@ const Certifications = () => {
             <motion.div
               key={index}
               whileHover={{ scale: 1.05, boxShadow: '0 0 35px rgba(0,255,255,.6)' }}
-              className="bg-jetLight border-2 border-gray-700 rounded-xl min-w-[320px] h-[430px] p-6 flex-shrink-0 text-center flex flex-col justify-between"
+              className="bg-jetLight border-2 border-gray-700 rounded-xl w-[320px] min-w-[320px] h-[430px] p-6 flex-shrink-0 text-center flex flex-col justify-between"
             >
               <a href={box.pdf} target="_blank" rel="noopener noreferrer">
               <img src={box.img} className="h-[160px] w-full object-contain mb-4" />
@@ -99,7 +99,7 @@ const Certifications = () => {
                 {box.title}
                 </h3>
               </a>
-              <p className="text-taupe text-sm leading-relaxed line-clamp-3">{box.content}</p>
+              <p className="text-taupe text-sm leading-relaxed line-clamp-2">{box.content}</p>
             </motion.div>
           ))}
 
