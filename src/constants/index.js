@@ -263,9 +263,9 @@ const projects = [
   
   {
     id: 'project-5',
-    name: 'IoT Systems',
+    name: 'DAS Threat Detection',
     description:
-      'Designed IoT solutions with sensors and microcontrollers for automated waste management and water-efficient irrigation - Smart Dustbin and Smart Irrigation System.',
+      'Developed a machine learning-based framework using Distributed Acoustic Sensing (DAS) to detect and classify physical threats and interception attempts in submarine optical fiber networks.',
     tags: [
       {
         name: 'nextjs',
@@ -281,7 +281,7 @@ const projects = [
       },
     ],
     image: nyeusi,
-    repo: 'https://github.com/GaurishBudhiraja/IOT',
+    repo: 'https://github.com/GaurishBudhiraja/DAS-Physical-Threat-Detection',
   },
 ];
 
